@@ -1,5 +1,7 @@
 [alias]
 build-riscv = "build --target riscv32imac-unknown-none-elf"
+build-bin = "objcopy -- -O binary rr_micro_os.bin"
+build-disasm = "objdump --bin rr_micro_os -- -d"
 
 [build]
 target = "riscv32i-unknown-none-elf"
